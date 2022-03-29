@@ -1,0 +1,124 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/colors' as *;
+
+.Plates {
+    @include category;
+
+    h3 {
+        margin: 1rem 0;
+    }
+}
+.Plate {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+        filter: blur(6px);
+    }
+
+    &__border {
+        @include border;
+        width: 10rem;
+        height: 3rem;
+    }
+    &__wrapper {
+        border-radius: 0.25rem;
+        position: relative;
+
+        &:hover {
+            .Plate__border {
+                display: none;
+            }
+        }
+    }
+
+    &--0 {
+        background-color: $color-white;
+    }
+    &--1 {
+        background-color: $color-yellow;
+    }
+    &--2 {
+        background-color: $color-black;
+    }
+    &--3 {
+        background-color: $color-white;
+        overflow: hidden;
+    }
+    &--4 {
+        background-color: $color-yellow;
+        overflow: hidden;
+    }
+    &--5 {
+        background-color: $color-white;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    &--6 {
+        background-color: $color-white;
+        overflow: hidden;
+    }
+    &--7 {
+        background-color: $color-red;
+    }
+    &--8 {
+        background-color: $color-blue;
+    }
+    &--9 {
+        background-color: $color-white;
+        overflow: hidden;
+    }
+    &--10 {
+        background-color: $color-white;
+        border: 0.25rem solid $color-blue;
+    }
+    &--11 {
+        background-color: $color-white;
+        border: 0.25rem solid $color-red;
+    }
+    &--12 {
+        background-color: $color-white;
+        border: 0.25rem solid $color-red;
+    }
+    &--13 {
+        background-color: $color-white;
+        border: 0.25rem solid #77ffa0;
+    }
+    &--14 {
+        background-color: $color-white;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    &--15 {
+        background-color: $color-yellow;
+        overflow: hidden;
+    }
+}
+
+.VBar {
+    width: 1.5rem;
+    height: 100%;
+
+    &--blue {
+        background-color: $color-blue;
+    }
+    &--red {
+        background-color: $color-red;
+    }
+    &--yellow {
+        background-color: $color-yellow;
+    }
+}
+
+.HBar {
+    width: 100%;
+    height: 0.75rem;
+
+    &--blue {
+        background-color: $color-blue;
+    }
+}

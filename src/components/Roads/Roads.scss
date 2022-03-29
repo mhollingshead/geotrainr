@@ -1,0 +1,82 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/colors' as *;
+
+.Roads {
+    @include category
+}
+
+.Road {
+    @include option;
+    border: none;
+    justify-content: space-between;
+    background-color: $color-black;
+    overflow: hidden;
+    position: relative;
+
+    &__border {
+        @include border;
+    }
+
+    .sideline , .middleline {
+        width: 0.5rem;
+        height: 100%;
+    }
+
+    &--yellow-white {
+        .sideline {
+            background-color: $color-yellow;
+        }
+        .middleline {
+            background-color: $color-white;
+        }
+    }
+    &--white-white {
+        .sideline {
+            background-color: $color-white;
+        }
+        .middleline {
+            background-color: $color-white;
+        }
+    }
+    &--white-yellow {
+        .sideline {
+            background-color: $color-white;
+        }
+        .middleline {
+            background-color: $color-yellow;
+        }
+    }
+    &--yellow-yellow {
+        .sideline {
+            background-color: $color-yellow;
+        }
+        .middleline {
+            background-color: $color-yellow;
+        }
+    }
+    &--white-white-yellow {
+        .sideline {
+            background-color: $color-white;
+        }
+        .middleline {
+            width: 1rem;
+            background-color: $color-white;
+            border-right: 0.5rem solid $color-yellow;
+        }
+    }
+    &--white-white-green {
+        .sideline {
+            background-color: $color-white;
+        }
+        .middleline {
+            width: 1rem;
+            border-left: 0.25rem solid $color-white;
+            background-color: rgb(0, 128, 64);
+            border-right: 0.25rem solid $color-white;
+        }
+    }
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}

@@ -1,0 +1,9 @@
+@use '../../partials/mixins' as *;
+
+.Sun {
+    @include category;
+
+    &__option {
+        @include option;
+    }
+}

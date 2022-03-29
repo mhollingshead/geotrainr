@@ -1,0 +1,32 @@
+@use '../../partials/mixins' as *;
+
+.Language {
+    @include category;
+
+    h3 {
+        margin: 1rem 0;
+    }
+
+    &__option {
+        @include option;
+        padding: 0;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        &--small {
+            height: auto;
+            width: 4rem;
+        }
+
+        &:hover {
+            filter: brightness(0.95);
+        }
+    }
+}

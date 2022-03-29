@@ -1,0 +1,23 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/colors' as *;
+
+.Traffic {
+    @include category;
+
+    &__option {
+        @include option;
+        flex-wrap: wrap;
+
+        .dir {
+            font-weight: 700;
+            color: #58667e50;
+            font-size: 2rem;
+
+            b {
+                font-weight: 900;
+                color: $color-blue;
+                opacity: 1;
+            }
+        }
+    }
+}

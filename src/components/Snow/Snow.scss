@@ -1,0 +1,9 @@
+@use '../../partials/mixins' as *;
+
+.Snow {
+    @include category;
+
+    &__option {
+        @include option;
+    }
+}
