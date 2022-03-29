@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/geotrainr/static/css/main.057ff0f9.css",
+    "main.js": "/geotrainr/static/js/main.71eb6749.js",
+    "static/js/787.a1077c32.chunk.js": "/geotrainr/static/js/787.a1077c32.chunk.js",
+    "index.html": "/geotrainr/index.html",
+    "main.057ff0f9.css.map": "/geotrainr/static/css/main.057ff0f9.css.map",
+    "main.71eb6749.js.map": "/geotrainr/static/js/main.71eb6749.js.map",
+    "787.a1077c32.chunk.js.map": "/geotrainr/static/js/787.a1077c32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.057ff0f9.css",
+    "static/js/main.71eb6749.js"
+  ]
+}
