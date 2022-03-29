@@ -21,7 +21,7 @@ To use GeoTrainr online, you can access the application via GitHub Pages **[here
 
 If you want to customize GeoTrainr or are interested in contributing, you can install and run the application locally by following the steps below:
 
-1. In your terminal of choice, run `git clone https://github.com/mhollingshead/geotrainr`. *Alternatively, you can download and unzip the repo [here]()*.
+1. In your terminal of choice, run `git clone https://github.com/mhollingshead/geotrainr`. *Alternatively, you can download and unzip the repo [here](https://github.com/mhollingshead/geotrainr/archive/refs/heads/main.zip)*.
 2. `cd` into the project directory and run `npm install` to install the necessary dependencies.
 3. Finally, run `npm start` to start the application. A new browser tab should open to [http://localhost:3000](http://localhost:3000) where you should be able to use GeoTrainr.
 
@@ -113,7 +113,7 @@ License plates are particularly useful for narrowing down your search to just a 
 
 Data for this category was gathered from [geohints.com/LicensePlates.html](https://geohints.com/LicensePlates.html). Since there are many styles of license plates, each plate *(front and back for any current or previous plate design)* is generalized by **main color** and **noticeable secondary features** *(such as a panel or border)*. Shape and size of the plate is not currently considered.
 
-There are too many plate styles to list, but if you're interested feel free to check out the data [here]().
+There are too many plate styles to list, but if you're interested feel free to check out the data [here](https://github.com/mhollingshead/geotrainr/blob/main/src/utils/data.js).
 
 ### Watermark
 
@@ -301,4 +301,4 @@ Once again, I'm no language expert. Sometimes identifying some character on a si
 
 ## Contributing
 
-GeoTrainr is a work in progress. If you want to contribute to the project, feel free to raise a PR. If you think you've identified a useful category, you're welcome to submit a suggestion as an [issue]().
+GeoTrainr is a work in progress. If you want to contribute to the project, feel free to raise a PR. If you think you've identified a useful category, you're welcome to submit a suggestion as an [issue](https://github.com/mhollingshead/geotrainr/issues).
